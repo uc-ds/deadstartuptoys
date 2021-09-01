@@ -1,0 +1,44 @@
+{
+  "name": "projectname",
+  "version": "1.0.0",
+  "description": "[PROJECT_NAME_DESCRIPTION]",
+  "author": "MSCHF",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate && gulp",
+    "precommit": "yarn lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "deploy": "nuxt generate && aws s3 sync dist/. s3:/s/[PROJECT_BUCKET_NAME] --delete"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.10.2",
+    "@nuxtjs/device": "^1.2.7",
+    "cookie-universal-nuxt": "^2.1.3",
+    "nuxt": "^2.13.3",
+    "nuxt-buefy": "^0.3.31",
+    "nuxt-facebook-pixel-module": "^1.3.0",
+    "underscore": "^1.11.0",
+    "v-scroll-lock": "^1.2.0",
+    "vue-analytics": "^5.18.0",
+    "vue-awesome-countdown": "^1.0.26",
+    "vue-moment-lib": "^1.2.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/pwa": "^3.3.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-html-minifier": "^0.1.8",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.1",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0"
+  }
+}
