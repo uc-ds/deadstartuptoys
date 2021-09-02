@@ -1,0 +1,20 @@
+{
+  "CartDropdownComponent": {
+    "description": "Auto imported from components/CartDropdownComponent.vue"
+  },
+  "FooterSection": {
+    "description": "Auto imported from components/FooterSection.vue"
+  },
+  "ManifestoSection": {
+    "description": "Auto imported from components/ManifestoSection.vue"
+  },
+  "PageBanner": {
+    "description": "Auto imported from components/PageBanner.vue"
+  },
+  "ProductCard": {
+    "description": "Auto imported from components/ProductCard.vue"
+  },
+  "ProductsSection": {
+    "description": "Auto imported from components/ProductsSection.vue"
+  }
+}

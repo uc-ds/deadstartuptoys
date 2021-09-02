@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Recoleta-RegularDEMO";
+  src: url("../fonts/Recoleta-RegularDEMO.otf") format("otf");
+}
+
+@font-face {
+  font-family: "AndaleMono";
+  src: url("../fonts/AndaleMono.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "SpaceMono-Regular";
+  src: url("../fonts/SpaceMono-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay-Regular";
+  src: url("../fonts/SFCompactDisplay-Regular.ttf") format("ttf");
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+.recoleta-font {
+  font-family: "Recoleta-RegularDEMO", sans-serif !important;
+}
+.andale-font {
+  font-family: "AndaleMono", sans-serif !important;
+}
+.space-font {
+  font-family: "SpaceMono-Regular", sans-serif !important;
+}
+.sfcompact-font {
+  font-family: "SFCompactDisplay-Regular", sans-serif !important;
+}
+
+.btn-gradient {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #004ed0;
+}
+
+.btn-gradient-secondary {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    #e1e1e1;
+  border: 1px solid #d9d9d9;
+}
+
+.cool-transition {
+  transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}

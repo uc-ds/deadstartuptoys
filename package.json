@@ -27,18 +27,23 @@
     "vue-moment-lib": "^1.2.2"
   },
   "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/pwa": "^3.3.2",
+    "@nuxtjs/tailwindcss": "^4.2.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.0.1",
+    "gsap": "^3.7.1",
     "gulp": "^4.0.2",
     "gulp-html-minifier": "^0.1.8",
-    "node-sass": "^4.13.0",
+    "node-sass": "^6.0.1",
     "nodemon": "^2.0.1",
+    "nuxt-property-decorator": "^2.9.1",
     "prettier": "^1.19.1",
-    "sass-loader": "^8.0.0"
+    "sass-loader": "^10"
   }
 }
