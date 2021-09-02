@@ -30,7 +30,7 @@
         />
       </div>
       <div
-        class="sticky top-2/3 z-50 w-full lg:flex hidden justify-end xl:pr-10 mt-48"
+        class="sticky top-3/4 z-50 w-full lg:flex hidden justify-end xl:pr-10 mt-48"
       >
         <CartDropdownComponent />
       </div>

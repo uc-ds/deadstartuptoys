@@ -88,6 +88,7 @@
             justify-center
             h-16
           "
+          @click="goToProduct"
         >
           Story
         </button>
@@ -112,6 +113,10 @@ export default {
       // @ts-ignore
       this.$emit("onCartClick");
     },
+    goToProduct() {
+      // @ts-ignore
+      this.$router.push("/product-page")
+    }
   },
 };
 </script>

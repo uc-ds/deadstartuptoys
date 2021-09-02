@@ -1,5 +1,12 @@
 [
   {
+    "name": "product-page",
+    "path": "/product-page",
+    "component": "/Users/waleed/iwork/jobs/upwork/deadtoy/pages/product-page.vue",
+    "chunkName": "pages/product-page",
+    "_name": "_35b99c9e"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/waleed/iwork/jobs/upwork/deadtoy/pages/index.vue",
