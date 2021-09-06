@@ -1,15 +1,22 @@
 <template>
   <section class="relative">
-    <img
-      src="/img/product-temple-mob.svg"
-      alt=""
-      class="absolute z-30 inset-0 w-full lg:hidden block"
-    />
-    <img
-      src="/img/product-temple.svg"
-      alt=""
-      class="absolute z-30 inset-0 w-full lg:block hidden"
-    />
+    <div class="sticky top-0 z-50 bg-transparent">
+      <img
+        src="/img/product-temple.png"
+        alt=""
+        class="absolute xl:block hidden z-50"
+      />
+      <img
+        src="/img/product-temple-tab.png"
+        alt=""
+        class="absolute xl:hidden md:block hidden z-50"
+      />
+      <img
+        src="/img/product-temple-mob.png"
+        alt=""
+        class="absolute md:hidden block z-50 w-full"
+      />
+    </div>
     <div class="fixed top-4 right-0" style="z-index: 62">
       <img
         src="/img/label.png"

@@ -29,6 +29,7 @@ module.exports = {
         "450px": "450px",
         "500px": "500px",
         "100px": "100px",
+        "80vh": "80vh",
       },
       width: {
         "400px": "400px",
@@ -41,6 +42,8 @@ module.exports = {
       },
       inset: {
         "1/5": "20%",
+        "80%": "80%",
+        "90%": "90%",
       },
       borderColor: {
         secondary: "#D9D9D9",

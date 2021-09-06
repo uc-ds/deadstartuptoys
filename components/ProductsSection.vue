@@ -1,67 +1,78 @@
 <template>
   <section id="products" class="relative product-bg">
     <div class="relative z-50">
+      <div class="sticky top-0 z-50 bg-transparent">
+        <img
+          src="/img/product-temple.png"
+          alt=""
+          class="absolute xl:block hidden z-50"
+        />
+        <img
+          src="/img/product-temple-tab.png"
+          alt=""
+          class="absolute xl:hidden md:block hidden z-50"
+        />
+        <img
+          src="/img/product-temple-mob.png"
+          alt=""
+          class="absolute md:hidden block z-50 w-full"
+        />
+      </div>
       <div
-        class="sticky top-0 w-full flex justify-center -mb-24"
+        class="sticky top-0 w-full flex justify-center -mb-24 lg:pt-16"
         style="z-index: 100"
       >
         <img src="/img/toys-label.svg" alt="" />
       </div>
       <div
         class="
-          flex flex-wrap
+          md:flex
+          hidden
+          flex-wrap
           md:justify-between
           justify-center
           sticky
-          z-40
           top-0
           items-start
+          pt-16
         "
+        style="z-index: 60"
       >
+        <img src="/img/product-castle-pillar.svg" alt="" class="absolute" />
         <img
-          src="/img/product-castle-pillar.png"
+          src="/img/product-castle-pillar.svg"
           alt=""
-          class="md:block hidden"
-        />
-        <img
-          src="/img/product-castle-pillar.png"
-          alt=""
-          class="md:block hidden"
+          class="absolute right-0"
         />
       </div>
       <div
-        class="sticky top-3/4 z-50 w-full lg:flex hidden justify-end xl:pr-10 mt-48"
+        class="sticky top-3/4 lg:flex hidden xl:pr-24 pt-24 w-full justify-end"
+        style="z-index: 62"
       >
         <CartDropdownComponent />
       </div>
       <div
         v-if="$store.state.addedToCart.length !== 0"
-        class="
-          lg:hidden
-          flex
-          absolute
-          bottom-0
-          z-50
-          w-full
-          justify-center
-        "
+        class="lg:hidden flex absolute bottom-0 z-50 w-full justify-center"
       >
         <CartDropdownComponent />
       </div>
       <div
         class="
-          w-full
+          sm:w-full
+          w-300px
+          mx-auto
           flex flex-wrap
           md:px-0
           sm:px-16
           px-10
-          md:-mt-96
-          mt-32
           md:pb-80
           pb-36
           relative
-          z-40
+          lg:pt-0
+          pt-44
         "
+        style="z-index: 60"
       >
         <template v-for="toy in deadToys">
           <div :key="toy.id" class="w-full flex justify-center mb-8">
@@ -99,14 +110,7 @@ export default class ProductsSection extends Vue {
 
 <style scoped lang="scss">
 .product-bg {
-  background: url("/img/clouds.jpg") center / cover no-repeat;
+  background: url("/img/clouds.jpg") center / cover no-repeat fixed;
   background-position-y: 0;
-}
-
-@media only screen and (max-width: 760px) {
-  .product-bg {
-    background: url("/img/clouds-mob.jpg") center / cover no-repeat !important;
-    background-position-y: 0 !important;
-  }
 }
 </style>
