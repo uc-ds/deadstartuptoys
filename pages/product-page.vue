@@ -4,7 +4,7 @@
       <img
         src="/img/product-temple.png"
         alt=""
-        class="absolute xl:block hidden z-50"
+        class="absolute xl:block hidden z-50 w-full"
       />
       <img
         src="/img/product-temple-tab.png"
@@ -17,7 +17,7 @@
         class="absolute md:hidden block z-50 w-full"
       />
     </div>
-    <div class="fixed top-4 right-0" style="z-index: 62">
+    <div class="fixed top-4 md:right-20 right-0" style="z-index: 62">
       <img
         src="/img/label.png"
         alt=""
@@ -30,7 +30,7 @@
       />
     </div>
 
-    <div class="fixed top-4 left-0" style="z-index: 62">
+    <div class="fixed top-4 md:left-20 left-0" style="z-index: 62">
       <img
         src="/img/label.png"
         alt=""
@@ -43,13 +43,38 @@
       />
     </div>
     <div
-      class="sticky top-3/4 w-full lg:flex hidden justify-end xl:pr-10"
+      class="
+        md:flex
+        hidden
+        flex-wrap
+        md:justify-between
+        justify-center
+        sticky
+        top-0
+        items-start
+        pt-28
+      "
+      style="z-index: 60"
+    >
+      <img
+        src="/img/product-castle-pillar.svg"
+        alt=""
+        class="absolute top-20"
+      />
+      <img
+        src="/img/product-castle-pillar.svg"
+        alt=""
+        class="absolute right-0 top-20"
+      />
+    </div>
+    <div
+      class="sticky top-3/4 w-full lg:flex hidden justify-end xl:pr-20"
       style="z-index: 70"
     >
       <CartDropdownComponent />
     </div>
     <div
-      class="fixed top-0 z-50 w-full flex justify-center"
+      class="fixed top-20 z-50 w-full flex justify-center"
       style="z-index: 62"
     >
       <button
@@ -59,7 +84,7 @@
         <img src="/img/back-img.svg" alt="" />
       </button>
     </div>
-    <div class="flex flex-wrap 2xl:pt-60 pt-36 relative" style="z-index: 60">
+    <div class="flex flex-wrap 2xl:pt-40 pt-36 relative" style="z-index: 60">
       <div class="w-full lg:px-0 md:px-6 px-10">
         <div
           class="
@@ -89,15 +114,15 @@
         class="
           md:w-360px
           w-full
-          lg:px-0
+          lg:px-6
           md:px-6
           px-10
           mx-auto
-          -mt-8
           flex flex-wrap
+          bg-white
         "
       >
-        <div class="w-full">
+        <div class="w-full -mt-8">
           <button
             class="
               btn-gradient

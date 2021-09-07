@@ -5,7 +5,7 @@
         <img
           src="/img/product-temple.png"
           alt=""
-          class="absolute xl:block hidden z-50"
+          class="absolute xl:block hidden z-50 w-full"
         />
         <img
           src="/img/product-temple-tab.png"
@@ -19,10 +19,10 @@
         />
       </div>
       <div
-        class="sticky top-0 w-full flex justify-center -mb-24 lg:pt-16"
+        class="sticky top-0 w-full flex justify-center -mb-24 lg:pt-20"
         style="z-index: 100"
       >
-        <img src="/img/toys-label.svg" alt="" />
+        <img src="/img/toys-label.svg" alt="" class="absolute" />
       </div>
       <div
         class="
@@ -34,19 +34,19 @@
           sticky
           top-0
           items-start
-          pt-16
+          pt-28
         "
         style="z-index: 60"
       >
-        <img src="/img/product-castle-pillar.svg" alt="" class="absolute" />
+        <img src="/img/product-castle-pillar.svg" alt="" class="absolute top-20" />
         <img
           src="/img/product-castle-pillar.svg"
           alt=""
-          class="absolute right-0"
+          class="absolute right-0 top-20"
         />
       </div>
       <div
-        class="sticky top-3/4 lg:flex hidden xl:pr-24 pt-24 w-full justify-end"
+        class="sticky top-2/3 lg:flex hidden xl:pr-24 pt-24 w-full justify-end"
         style="z-index: 62"
       >
         <CartDropdownComponent />
@@ -70,7 +70,7 @@
           pb-36
           relative
           lg:pt-0
-          pt-44
+          sm:pt-44 pt-56
         "
         style="z-index: 60"
       >

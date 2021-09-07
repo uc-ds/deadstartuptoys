@@ -3,8 +3,9 @@
     class="w-300px h-full relative inline-block cool-transition"
     :class="toggleMenu ? '' : 'overflow-hidden'"
   >
+    <img src="/img/cart.png" alt="" class="ml-auto relative z-50 -mb-4"/>
     <button
-      class="relative w-full flex h-20 items-center z-50"
+      class="relative w-full flex h-20 items-center z-40"
       @click="toggleMenu = !toggleMenu"
     >
       <img src="/img/dropdown-img.png" alt="" class="absolute w-full h-full" />
