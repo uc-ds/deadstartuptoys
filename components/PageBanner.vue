@@ -69,6 +69,7 @@
         z-50
         md:hidden
         block
+        sm:h-auto h-1/5
       "
     />
     <div class="w-full flex flex-wrap fixed z-40 sm:px-0 px-10">
@@ -82,7 +83,7 @@
               text-white
               filter
               drop-shadow-text
-              leading-tight
+              md:leading-tight leading-none
             "
           >
             Dead <br class="sm:hidden block" />
@@ -90,7 +91,7 @@
             Toys
           </h1>
         </div>
-        <div class="w-full text-center mb-10">
+        <div class="w-full text-center sm:mb-10 mb-6 sm:mt-0 mt-4">
           <p class="filter drop-shadow-text md:text-4xl text-xl text-white">
             Toy versions of iconic <br class="sm:hidden block" />
             failed startups
@@ -104,14 +105,14 @@
               flex flex-wrap
               shadow-main
               rounded-full
-              py-3
+              sm:py-3 py-1
               px-8
               text-center
             "
             href="#products"
           >
-            <span class="w-full text-xl mb-2">Shop now</span>
-            <span class="w-full text-xl opacity-50">Limited edition</span>
+            <span class="w-full sm:text-xl text-lg sm:mb-2">Shop now</span>
+            <span class="w-full sm:text-xl text-lg opacity-50">Limited edition</span>
           </a>
         </div>
       </div>

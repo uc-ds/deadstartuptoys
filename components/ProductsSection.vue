@@ -19,7 +19,7 @@
         />
       </div>
       <div
-        class="sticky top-0 w-full flex justify-center -mb-24 lg:pt-20"
+        class="sticky top-0 w-full flex justify-center -mb-24 2xl:pt-40 lg:pt-20"
         style="z-index: 100"
       >
         <img src="/img/toys-label.svg" alt="" class="absolute" />
@@ -28,21 +28,23 @@
         class="
           md:flex
           hidden
-          flex-wrap
-          md:justify-between
-          justify-center
           sticky
           top-0
           items-start
-          pt-28
+          lg:pt-10
+          md:pt-20
         "
         style="z-index: 60"
       >
-        <img src="/img/product-castle-pillar.svg" alt="" class="absolute top-20" />
         <img
           src="/img/product-castle-pillar.svg"
           alt=""
-          class="absolute right-0 top-20"
+          class="absolute md:top-28 2xl:top-36 2xl:pt-10 pt-5"
+        />
+        <img
+          src="/img/product-castle-pillar.svg"
+          alt=""
+          class="absolute right-0 md:top-28 2xl:top-36 2xl:pt-10 pt-5"
         />
       </div>
       <div
@@ -53,7 +55,8 @@
       </div>
       <div
         v-if="$store.state.addedToCart.length !== 0"
-        class="lg:hidden flex absolute bottom-0 z-50 w-full justify-center"
+        class="lg:hidden flex absolute bottom-0 w-full justify-center"
+        style="z-index: 62"
       >
         <CartDropdownComponent />
       </div>
@@ -66,11 +69,12 @@
           md:px-0
           sm:px-16
           px-10
-          md:pb-80
+          md:pb-0
           pb-36
           relative
           lg:pt-0
-          sm:pt-44 pt-56
+          sm:pt-44
+          pt-56
         "
         style="z-index: 60"
       >

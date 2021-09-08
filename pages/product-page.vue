@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <section class="relative md:pb-0 pb-40">
     <div class="sticky top-0 z-50 bg-transparent">
       <img
         src="/img/product-temple.png"
@@ -52,6 +52,7 @@
         sticky
         top-0
         items-start
+        md:pt-0
         pt-28
       "
       style="z-index: 60"
@@ -74,7 +75,14 @@
       <CartDropdownComponent />
     </div>
     <div
-      class="fixed top-20 z-50 w-full flex justify-center"
+      v-if="$store.state.addedToCart.length !== 0"
+      class="lg:hidden flex absolute bottom-0 w-full justify-center"
+      style="z-index: 62"
+    >
+      <CartDropdownComponent />
+    </div>
+    <div
+      class="fixed sm:top-20 top-0 z-50 w-full flex justify-center"
       style="z-index: 62"
     >
       <button
@@ -84,7 +92,10 @@
         <img src="/img/back-img.svg" alt="" />
       </button>
     </div>
-    <div class="flex flex-wrap 2xl:pt-40 pt-36 relative" style="z-index: 60">
+    <div
+      class="flex flex-wrap 2xl:pt-40 pt-36 relative md:pb-0"
+      style="z-index: 60"
+    >
       <div class="w-full lg:px-0 md:px-6 px-10">
         <div
           class="
@@ -119,7 +130,7 @@
           px-10
           mx-auto
           flex flex-wrap
-          bg-white
+          md:bg-white
         "
       >
         <div class="w-full -mt-8">
@@ -139,8 +150,8 @@
             Add to cart <span class="opacity-50 ml-2">$59.99</span>
           </button>
         </div>
-        <div class="w-full flex my-4 space-x-4">
-          <div class="w-1/2">
+        <div class="w-full flex md:flex-nowrap flex-wrap my-4 md:space-x-4">
+          <div class="md:w-1/2 w-full">
             <fieldset
               class="
                 border border-black-light
@@ -161,7 +172,7 @@
               </p>
             </fieldset>
           </div>
-          <div class="w-1/2">
+          <div class="md:w-1/2 w-full md:my-0 my-5">
             <fieldset
               class="
                 border border-black-light
