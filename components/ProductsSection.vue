@@ -18,37 +18,43 @@
           class="absolute md:hidden block z-50 w-full"
         />
       </div>
-      <div
-        class="sticky top-0 w-full flex justify-center -mb-24 2xl:pt-40 lg:pt-20"
-        style="z-index: 100"
-      >
-        <img src="/img/toys-label.svg" alt="" class="absolute" />
-      </div>
-      <div
+      <!-- <div
         class="
-          md:flex
-          hidden
           sticky
           top-0
-          items-start
-          lg:pt-10
-          md:pt-20
+          w-full
+          flex
+          justify-center
+          -mb-24
+          2xl:pt-40
+          lg:pt-20
         "
+        style="z-index: 100"
+      >
+        
+      </div> -->
+      <div
+        class="md:flex hidden sticky top-0 items-start 2xl:pt-32 lg:pt-24 md:pt-20"
         style="z-index: 60"
       >
         <img
           src="/img/product-castle-pillar.svg"
           alt=""
-          class="absolute md:top-28 2xl:top-36 2xl:pt-10 pt-5"
+          class="absolute mt-4"
+        />
+        <img
+          src="/img/toys-label.svg"
+          alt=""
+          class="absolute left-1/2 right-1/2 transform -translate-x-1/2"
         />
         <img
           src="/img/product-castle-pillar.svg"
           alt=""
-          class="absolute right-0 md:top-28 2xl:top-36 2xl:pt-10 pt-5"
+          class="absolute right-0 mt-4"
         />
       </div>
       <div
-        class="sticky top-2/3 lg:flex hidden xl:pr-24 pt-24 w-full justify-end"
+        class="sticky top-2/3 lg:block hidden pt-24 w-300px ml-auto mr-32"
         style="z-index: 62"
       >
         <CartDropdownComponent />
@@ -62,7 +68,8 @@
       </div>
       <div
         class="
-          sm:w-full
+          md:w-full
+          sm:w-600px
           w-300px
           mx-auto
           flex flex-wrap
@@ -72,9 +79,10 @@
           md:pb-0
           pb-36
           relative
-          lg:pt-0
-          sm:pt-44
-          pt-56
+          xl:pt-0
+          lg:pt-20
+          md:pt-52
+          pt-80
         "
         style="z-index: 60"
       >

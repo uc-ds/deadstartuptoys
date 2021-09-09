@@ -51,7 +51,7 @@
         right-0
         w-11/12
         mx-auto
-        z-50
+        z-30
         md:block
         hidden
       "
@@ -66,13 +66,13 @@
         right-0
         w-full
         mx-auto
-        z-50
+        z-30
         md:hidden
         block
         sm:h-auto h-1/5
       "
     />
-    <div class="w-full flex flex-wrap fixed z-40 sm:px-0 px-10">
+    <div class="w-full flex flex-wrap fixed z-20 sm:px-0 px-10">
       <div class="w-full flex flex-wrap">
         <div class="w-full text-center">
           <h1
