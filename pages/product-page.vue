@@ -1,5 +1,22 @@
 <template>
   <section class="relative md:pb-0 pb-40">
+    <div class="sticky top-0" style="z-index: 100">
+      <img
+        src="/img/product-temple-top.png"
+        alt=""
+        class="absolute xl:block hidden z-50 w-full"
+      />
+      <img
+        src="/img/product-temple-tab-top.png"
+        alt=""
+        class="absolute xl:hidden md:block hidden"
+      />
+      <img
+        src="/img/product-temple-mob-top.png"
+        alt=""
+        class="absolute md:hidden block z-50 w-full"
+      />
+    </div>
     <div class="sticky top-0 z-50 bg-transparent">
       <img
         src="/img/product-temple.png"
@@ -17,7 +34,7 @@
         class="absolute md:hidden block z-50 w-full"
       />
     </div>
-    <div class="fixed top-4 md:right-20 right-0" style="z-index: 62">
+    <div class="fixed top-4 md:right-20 right-0" style="z-index: 150">
       <img
         src="/img/label.png"
         alt=""
@@ -30,7 +47,7 @@
       />
     </div>
 
-    <div class="fixed top-4 md:left-20 left-0" style="z-index: 62">
+    <div class="fixed top-4 md:left-20 left-0" style="z-index: 150">
       <img
         src="/img/label.png"
         alt=""
@@ -55,7 +72,7 @@
         md:pt-0
         pt-28
       "
-      style="z-index: 60"
+      style="z-index: 150"
     >
       <img
         src="/img/product-castle-pillar.svg"
@@ -70,20 +87,20 @@
     </div>
     <div
       class="sticky top-3/4 w-full lg:flex hidden justify-end xl:pr-20"
-      style="z-index: 70"
+      style="z-index: 150"
     >
       <CartDropdownComponent />
     </div>
     <div
       v-if="$store.state.addedToCart.length !== 0"
-      class="lg:hidden flex absolute bottom-0 w-full justify-center"
+      class="lg:hidden flex absolute bottom-0 w-full justify-center"`
       style="z-index: 62"
     >
       <CartDropdownComponent />
     </div>
     <div
       class="fixed sm:top-20 top-0 z-50 w-full flex justify-center"
-      style="z-index: 62"
+      style="z-index: 150"
     >
       <button
         class="bg-transparent outline-none focus:outline-none"
@@ -130,7 +147,6 @@
           px-10
           mx-auto
           flex flex-wrap
-          md:bg-white
         "
       >
         <div class="w-full -mt-8">

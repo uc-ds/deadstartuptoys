@@ -1,6 +1,23 @@
 <template>
   <section id="products" class="relative product-bg">
     <div class="relative z-50">
+      <div class="sticky top-0" style="z-index: 100">
+        <img
+          src="/img/product-temple-top.png"
+          alt=""
+          class="absolute xl:block hidden z-50 w-full"
+        />
+        <img
+          src="/img/product-temple-tab-top.png"
+          alt=""
+          class="absolute xl:hidden md:block hidden"
+        />
+        <img
+          src="/img/product-temple-mob-top.png"
+          alt=""
+          class="absolute md:hidden block z-50 w-full"
+        />
+      </div>
       <div class="sticky top-0 z-50 bg-transparent">
         <img
           src="/img/product-temple.png"
@@ -18,24 +35,18 @@
           class="absolute md:hidden block z-50 w-full"
         />
       </div>
-      <!-- <div
+      <div
         class="
+          md:flex
+          hidden
           sticky
           top-0
-          w-full
-          flex
-          justify-center
-          -mb-24
-          2xl:pt-40
-          lg:pt-20
+          items-start
+          2xl:pt-32
+          lg:pt-24
+          md:pt-20
         "
-        style="z-index: 100"
-      >
-        
-      </div> -->
-      <div
-        class="md:flex hidden sticky top-0 items-start 2xl:pt-32 lg:pt-24 md:pt-20"
-        style="z-index: 60"
+        style="z-index: 100 !important"
       >
         <img
           src="/img/product-castle-pillar.svg"
@@ -55,14 +66,24 @@
       </div>
       <div
         class="sticky top-2/3 lg:block hidden pt-24 w-300px ml-auto mr-32"
-        style="z-index: 62"
+        style="z-index: 100"
       >
         <CartDropdownComponent />
       </div>
       <div
+        class="md:hidden flex sticky top-0 w-full justify-center"
+        style="z-index: 100"
+      >
+        <img
+          src="/img/toys-label.svg"
+          alt=""
+          class="absolute"
+        />
+      </div>
+      <div
         v-if="$store.state.addedToCart.length !== 0"
         class="lg:hidden flex absolute bottom-0 w-full justify-center"
-        style="z-index: 62"
+        style="z-index: 100"
       >
         <CartDropdownComponent />
       </div>
@@ -78,7 +99,7 @@
           px-10
           md:pb-0
           pb-36
-          relative
+          sticky
           xl:pt-0
           lg:pt-20
           md:pt-52

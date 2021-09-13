@@ -1,0 +1,25 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/cart-dropdown-component.js": "components/cart-dropdown-component.js",
+    "components/footer-section.js": "components/footer-section.js",
+    "components/manifesto-section.js": "components/manifesto-section.js",
+    "components/page-banner.js": "components/page-banner.js",
+    "components/product-card.js": "components/product-card.js",
+    "components/products-section.js": "components/products-section.js",
+    "pages/index.js": "pages/index.js",
+    "pages/product-page.js": "pages/product-page.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/cart-dropdown-component.js": "components/cart-dropdown-component.js.map",
+    "components/footer-section.js": "components/footer-section.js.map",
+    "components/manifesto-section.js": "components/manifesto-section.js.map",
+    "components/page-banner.js": "components/page-banner.js.map",
+    "components/product-card.js": "components/product-card.js.map",
+    "components/products-section.js": "components/products-section.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/product-page.js": "pages/product-page.js.map",
+    "server.js": "server.js.map"
+  }
+}
