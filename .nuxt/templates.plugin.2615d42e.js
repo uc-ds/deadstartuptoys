@@ -85,7 +85,7 @@ function log (...messages) {
 
 export default (ctx, inject) => {
   let _fbq
-  const parsedOptions = {"pixelId":"FB_PIXEL_ID","track":"PageView","autoPageView":false,"version":"2.0","pixels":[],"manualMode":false,"disabled":false,"debug":false,"dev":false}
+  const parsedOptions = {"pixelId":"FB_PIXEL_ID","track":"PageView","autoPageView":false,"version":"2.0","pixels":[],"manualMode":false,"disabled":false,"debug":false,"dev":true}
   const isDev = parsedOptions.dev && !parsedOptions.debug
 
   if (isDev) log('You are running in development mode. Set "debug: true" in your nuxt.config.js if you would like to trigger tracking events in local.')

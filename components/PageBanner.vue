@@ -13,32 +13,67 @@
     <img
       src="/img/label.png"
       alt=""
-      class="w-1/3 md:hidden block top-0 fixed z-50 left-1/2 right-1/2 -translate-x-1/2"
+      class="
+        w-1/3
+        md:hidden
+        block
+        top-0
+        fixed
+        z-50
+        left-1/2
+        right-1/2
+        -translate-x-1/2
+      "
     />
-    <img src="/img/castle.png" alt="" class="fixed z-40 h-full w-full" />
-    <div class="fixed top-4 md:right-8 right-0 z-50">
+    <img
+      src="/img/banner-temple-left.png"
+      alt=""
+      class="fixed z-50 -top-2 2xl:w-auto xl:h-auto xl:w-1/3 w-1/4 h-full"
+    />
+    <img
+      src="/img/banner-temple-top.png"
+      alt=""
+      class="fixed top-0 w-full left-0 right-0"
+      style="z-index: 52"
+    />
+    <img
+      src="/img/banner-temple-right.png"
+      alt=""
+      class="
+        fixed
+        z-50
+        right-0
+        -top-2
+        xl:w-1/3
+        w-1/4
+        h-full
+        2xl:w-auto
+        xl:h-auto
+      "
+    />
+    <div class="fixed top-4 md:right-8 right-0" style="z-index: 60">
       <img
         src="/img/label.png"
         alt=""
-        class="ml-auto sm:w-full w-1/2 md:block hidden"
+        class="ml-auto lg:w-full w-1/2 md:block hidden"
       />
       <img
         src="/img/angel-2.png"
         alt=""
-        class="-mt-5 sm:w-full w-2/3 ml-auto sm:mr-0 -mr-5"
+        class="-mt-5 lg:w-full w-2/3 ml-auto sm:mr-0 -mr-5"
       />
     </div>
 
-    <div class="fixed top-4 md:left-8 left-0 z-50">
+    <div class="fixed top-4 md:left-8 left-0" style="z-index: 60">
       <img
         src="/img/label.png"
         alt=""
-        class="sm:w-full w-1/2 md:block hidden"
+        class="lg:w-full w-1/2 md:block hidden"
       />
       <img
         src="/img/angel.png"
         alt=""
-        class="-mt-5 sm:w-full w-2/3 sm:ml-0 -ml-5"
+        class="-mt-5 lg:w-full w-2/3 sm:ml-0 -ml-5"
       />
     </div>
     <img
@@ -51,7 +86,7 @@
         right-0
         w-11/12
         mx-auto
-        z-30
+        z-40
         md:block
         hidden
       "
@@ -66,13 +101,14 @@
         right-0
         w-full
         mx-auto
-        z-30
+        z-40
         md:hidden
         block
-        sm:h-auto h-1/5
+        sm:h-auto
+        h-1/5
       "
     />
-    <div class="w-full flex flex-wrap fixed z-20 sm:px-0 px-10">
+    <div class="w-full flex flex-wrap fixed z-30 sm:px-0 px-10">
       <div class="w-full flex flex-wrap">
         <div class="w-full text-center">
           <h1
@@ -83,10 +119,11 @@
               text-white
               filter
               drop-shadow-text
-              md:leading-tight leading-none
+              md:leading-tight
+              leading-none
             "
           >
-            Dead <br class="sm:hidden block" />
+            Dead <br class="xl:hidden lg:block sm:hidden block" />
             Startup <br class="sm:hidden block" />
             Toys
           </h1>
@@ -105,14 +142,17 @@
               flex flex-wrap
               shadow-main
               rounded-full
-              sm:py-3 py-1
+              sm:py-3
+              py-1
               px-8
               text-center
             "
             href="#products"
           >
             <span class="w-full sm:text-xl text-lg sm:mb-2">Shop now</span>
-            <span class="w-full sm:text-xl text-lg opacity-50">Limited edition</span>
+            <span class="w-full sm:text-xl text-lg opacity-50"
+              >Limited edition</span
+            >
           </a>
         </div>
       </div>

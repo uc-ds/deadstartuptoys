@@ -1,9 +1,9 @@
-export const CartDropdownComponent = () => import('../../components/CartDropdownComponent.vue' /* webpackChunkName: "components/cart-dropdown-component" */).then(c => wrapFunctional(c.default || c))
-export const FooterSection = () => import('../../components/FooterSection.vue' /* webpackChunkName: "components/footer-section" */).then(c => wrapFunctional(c.default || c))
-export const ManifestoSection = () => import('../../components/ManifestoSection.vue' /* webpackChunkName: "components/manifesto-section" */).then(c => wrapFunctional(c.default || c))
-export const PageBanner = () => import('../../components/PageBanner.vue' /* webpackChunkName: "components/page-banner" */).then(c => wrapFunctional(c.default || c))
-export const ProductCard = () => import('../../components/ProductCard.vue' /* webpackChunkName: "components/product-card" */).then(c => wrapFunctional(c.default || c))
-export const ProductsSection = () => import('../../components/ProductsSection.vue' /* webpackChunkName: "components/products-section" */).then(c => wrapFunctional(c.default || c))
+export { default as CartDropdownComponent } from '../../components/CartDropdownComponent.vue'
+export { default as FooterSection } from '../../components/FooterSection.vue'
+export { default as ManifestoSection } from '../../components/ManifestoSection.vue'
+export { default as PageBanner } from '../../components/PageBanner.vue'
+export { default as ProductCard } from '../../components/ProductCard.vue'
+export { default as ProductsSection } from '../../components/ProductsSection.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
