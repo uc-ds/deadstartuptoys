@@ -1,9 +1,12 @@
 <template>
   <div
     class="w-300px h-full relative inline-block cool-transition"
-    :class="toggleMenu ? '' : 'overflow-hidden'"
   >
-    <img src="/img/cart.png" alt="" class="ml-auto relative z-50 -mb-4"/>
+    <img
+      src="/img/cart.png"
+      alt=""
+      class="ml-auto relative z-50 -mb-4 pointer-events-none"
+    />
     <button
       class="relative w-full flex h-20 items-center z-40"
       @click="toggleMenu = !toggleMenu"
@@ -19,7 +22,7 @@
       </div>
     </button>
     <div
-      :class="toggleMenu ? 'block' : 'hidden'"
+      :class="toggleMenu ? 'scale-x-100' : 'scale-x-0'"
       class="
         bg-white
         shadow-main
@@ -27,6 +30,7 @@
         rounded-t-xl
         w-260px
         mx-auto
+        block
         py-3
         px-4
         cool-transition
@@ -129,7 +133,7 @@ export default class CartDropdownComponent extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .indicator-bg {
   background: url("/img/indicator-bg.png");
 }

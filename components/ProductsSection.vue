@@ -1,38 +1,24 @@
 <template>
   <section id="products" class="relative product-bg">
     <div class="relative z-50">
-      <div class="sticky top-0" style="z-index: 100">
-        <img
-          src="/img/product-temple-top.png"
-          alt=""
-          class="absolute xl:block hidden z-50 w-full"
-        />
-        <img
-          src="/img/product-temple-tab-top.png"
-          alt=""
-          class="absolute xl:hidden md:block hidden"
-        />
-        <img
-          src="/img/product-temple-mob-top.png"
-          alt=""
-          class="absolute md:hidden block z-50 w-full"
-        />
-      </div>
-      <div class="sticky top-0 z-50 bg-transparent">
+      <div
+        class="sticky top-0 pointer-events-none"
+        style="z-index: 100"
+      >
         <img
           src="/img/product-temple.png"
           alt=""
-          class="absolute xl:block hidden z-50 w-full"
+          class="absolute xl:block hidden z-50 w-full h-screen"
         />
         <img
           src="/img/product-temple-tab.png"
           alt=""
-          class="absolute xl:hidden md:block hidden z-50"
+          class="absolute xl:hidden md:block hidden z-50 w-full h-screen"
         />
         <img
           src="/img/product-temple-mob.png"
           alt=""
-          class="absolute md:hidden block z-50 w-full"
+          class="absolute md:hidden block z-50 w-full h-screen"
         />
       </div>
       <div
@@ -42,9 +28,6 @@
           sticky
           top-0
           items-start
-          2xl:pt-32
-          lg:pt-24
-          md:pt-20
         "
         style="z-index: 100 !important"
       >
@@ -74,11 +57,7 @@
         class="md:hidden flex sticky top-0 w-full justify-center"
         style="z-index: 100"
       >
-        <img
-          src="/img/toys-label.svg"
-          alt=""
-          class="absolute"
-        />
+        <img src="/img/toys-label.svg" alt="" class="absolute" />
       </div>
       <div
         v-if="$store.state.addedToCart.length !== 0"
@@ -97,13 +76,12 @@
           md:px-0
           sm:px-16
           px-10
-          md:pb-0
           pb-36
           sticky
           xl:pt-0
           lg:pt-20
           md:pt-52
-          pt-80
+          pt-32
         "
         style="z-index: 60"
       >

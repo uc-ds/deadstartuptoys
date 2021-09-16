@@ -1,23 +1,9 @@
 <template>
   <section class="relative md:pb-0 pb-40">
-    <div class="sticky top-0" style="z-index: 100">
-      <img
-        src="/img/product-temple-top.png"
-        alt=""
-        class="absolute xl:block hidden z-50 w-full"
-      />
-      <img
-        src="/img/product-temple-tab-top.png"
-        alt=""
-        class="absolute xl:hidden md:block hidden"
-      />
-      <img
-        src="/img/product-temple-mob-top.png"
-        alt=""
-        class="absolute md:hidden block z-50 w-full"
-      />
-    </div>
-    <div class="sticky top-0 z-50 bg-transparent">
+    <div
+      class="sticky top-0 z-50 bg-transparent pointer-events-none"
+      style="z-index: 100"
+    >
       <img
         src="/img/product-temple.png"
         alt=""
@@ -77,12 +63,12 @@
       <img
         src="/img/product-castle-pillar.svg"
         alt=""
-        class="absolute top-20"
+        class="absolute 2xl:top-36 top-20"
       />
       <img
         src="/img/product-castle-pillar.svg"
         alt=""
-        class="absolute right-0 top-20"
+        class="absolute right-0 2xl:top-36 top-20"
       />
     </div>
     <div
@@ -93,13 +79,14 @@
     </div>
     <div
       v-if="$store.state.addedToCart.length !== 0"
-      class="lg:hidden flex absolute bottom-0 w-full justify-center"`
+      class="lg:hidden flex absolute bottom-0 w-full justify-center"
+      `
       style="z-index: 62"
     >
       <CartDropdownComponent />
     </div>
     <div
-      class="fixed sm:top-20 top-0 z-50 w-full flex justify-center"
+      class="fixed 2xl:top-36 sm:top-20 top-0 z-50 w-full flex justify-center"
       style="z-index: 150"
     >
       <button
@@ -139,15 +126,7 @@
         </div>
       </div>
       <div
-        class="
-          md:w-360px
-          w-full
-          lg:px-6
-          md:px-6
-          px-10
-          mx-auto
-          flex flex-wrap
-        "
+        class="md:w-360px w-full lg:px-6 md:px-6 px-10 mx-auto flex flex-wrap"
       >
         <div class="w-full -mt-8">
           <button
