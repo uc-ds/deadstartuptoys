@@ -1,5 +1,5 @@
 <template>
-  <section id="products" class="relative product-bg -mt-2 min-h-screen">
+  <section id="products" class="relative product-bg -mt-2 h-full 2xl:mb-20 xl:-mb-14 md:mb-16">
     <img src="/img/temple-topbar.png" alt="" class="w-full xl:block hidden" />
     <img
       src="/img/temple-topbar-lg.png"
@@ -18,7 +18,7 @@
     />
     <div
       :class="positionClass"
-      class="pointer-events-none max-h-screen"
+      class="pointer-events-none"
       style="z-index: 100"
     >
       <div class="absolute w-full top-0 pointer-events-none">

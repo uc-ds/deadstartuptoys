@@ -43,7 +43,7 @@
           class="lg:hidden md:block hidden w-full h-full"
         />
         <img
-          src="/img/temple-mob.png"
+          src="/img/temple-mob-2.png"
           alt=""
           class="md:hidden block w-full h-full"
         />
@@ -336,7 +336,7 @@ export default {
     window.addEventListener("scroll", () => {
       if (window.innerWidth > 1500) {
         // @ts-ignore
-        if (document.scrollingElement.scrollTop > 1400) {
+        if (document.scrollingElement.scrollTop > 1358) {
           // @ts-ignore
           this.positionClass =
             "absolute 2xl:bottom-72 xl:bottom-60 lg:bottom-64 bottom-60 w-full h-full";
@@ -351,7 +351,7 @@ export default {
         }
       } else if (window.innerWidth > 600) {
         // @ts-ignore
-        if (document.scrollingElement.scrollTop > 1570) {
+        if (document.scrollingElement.scrollTop > 1500) {
           // @ts-ignore
           this.positionClass =
             "absolute 2xl:bottom-72 xl:bottom-60 lg:bottom-64 bottom-60 w-full h-full";
@@ -366,7 +366,7 @@ export default {
         }
       } else {
         // @ts-ignore
-        if (document.scrollingElement.scrollTop > 1700) {
+        if (document.scrollingElement.scrollTop > 1800) {
           // @ts-ignore
           this.positionClass =
             "absolute 2xl:bottom-72 xl:bottom-60 lg:bottom-64 bottom-60 w-full h-full";
