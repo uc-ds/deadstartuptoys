@@ -11,4 +11,5 @@ You can directly use them in pages and other components without the need to impo
 - `<ManifestoSection>` | `<manifesto-section>` (components/ManifestoSection.vue)
 - `<PageBanner>` | `<page-banner>` (components/PageBanner.vue)
 - `<ProductCard>` | `<product-card>` (components/ProductCard.vue)
+- `<ProductPageDetails>` | `<product-page-details>` (components/ProductPageDetails.vue)
 - `<ProductsSection>` | `<products-section>` (components/ProductsSection.vue)

@@ -1,40 +1,64 @@
 <template>
-  <section id="products" class="relative product-bg">
-    <div class="relative z-50">
-      <div
-        class="sticky top-0 pointer-events-none"
-        style="z-index: 100"
-      >
+  <section id="products" class="relative product-bg -mt-2 min-h-screen">
+    <img src="/img/temple-topbar.png" alt="" class="w-full xl:block hidden" />
+    <img
+      src="/img/temple-topbar-lg.png"
+      alt=""
+      class="w-full xl:hidden lg:block hidden"
+    />
+    <img
+      src="/img/temple-topbar-tab.png"
+      alt=""
+      class="w-full lg:hidden md:block hidden -mb-2"
+    />
+    <img
+      src="/img/temple-topbar-mob.png"
+      alt=""
+      class="w-full md:hidden block -mb-2"
+    />
+    <div
+      :class="positionClass"
+      class="pointer-events-none max-h-screen"
+      style="z-index: 100"
+    >
+      <div class="absolute w-full top-0 pointer-events-none">
         <img
-          src="/img/product-temple.png"
+          src="/img/temple-2.png"
           alt=""
-          class="absolute xl:block hidden z-50 w-full h-screen"
+          class="xl:block hidden w-full h-full pointer-events-none"
         />
         <img
-          src="/img/product-temple-tab.png"
+          src="/img/temple-3.png"
           alt=""
-          class="absolute xl:hidden md:block hidden z-50 w-full h-screen"
+          class="xl:block hidden w-full h-full pointer-events-none 2xl:-mt-52"
         />
         <img
-          src="/img/product-temple-mob.png"
+          src="/img/temple-lg.png"
           alt=""
-          class="absolute md:hidden block z-50 w-full h-screen"
+          class="xl:hidden lg:block hidden w-full h-full pointer-events-none"
+        />
+        <img
+          src="/img/temple-tab.png"
+          alt=""
+          class="lg:hidden md:block hidden w-full h-full pointer-events-none"
+        />
+        <img
+          src="/img/temple-mob.png"
+          alt=""
+          class="md:hidden block w-full h-full pointer-events-none"
         />
       </div>
+    </div>
+    <div>
       <div
-        class="
-          md:flex
-          hidden
-          sticky
-          top-0
-          items-start
-        "
-        style="z-index: 100 !important"
+        :class="pillarClass"
+        class="md:block hidden max-h-screen w-full pointer-events-none"
+        style="z-index: 110 !important"
       >
         <img
           src="/img/product-castle-pillar.svg"
           alt=""
-          class="absolute mt-4"
+          class="absolute lg:block hidden mt-6"
         />
         <img
           src="/img/toys-label.svg"
@@ -44,20 +68,21 @@
         <img
           src="/img/product-castle-pillar.svg"
           alt=""
-          class="absolute right-0 mt-4"
+          class="absolute right-0 lg:block hidden mt-6"
         />
+        <div
+          class="absolute right-28 pointer-events-auto lg:block hidden"
+          style="top: 770px"
+        >
+          <CartDropdownComponent />
+        </div>
       </div>
       <div
-        class="sticky top-2/3 lg:block hidden pt-24 w-300px ml-auto mr-32"
+        :class="positionClass"
+        class="md:hidden flex w-full justify-center"
         style="z-index: 100"
       >
-        <CartDropdownComponent />
-      </div>
-      <div
-        class="md:hidden flex sticky top-0 w-full justify-center"
-        style="z-index: 100"
-      >
-        <img src="/img/toys-label.svg" alt="" class="absolute" />
+        <img src="/img/toys-label-mob.svg" alt="" class="absolute -mt-5" />
       </div>
       <div
         v-if="$store.state.addedToCart.length !== 0"
@@ -76,12 +101,11 @@
           md:px-0
           sm:px-16
           px-10
-          pb-36
+          pb-72
           sticky
-          xl:pt-0
-          lg:pt-20
+          lg:pt-40
           md:pt-52
-          pt-32
+          pt-40
         "
         style="z-index: 60"
       >
@@ -112,10 +136,26 @@ import { IProductCard } from "~/utils/interfaces";
 export default class ProductsSection extends Vue {
   // @ts-ignore
   public deadToys: IProductCard[] = this.$store.state.deadToys;
-
   public updateCart = (item: IProductCard | any) => {
-    this.$store.commit("updateCart", item);
+    this.$store.dispatch("updateCart", item);
   };
+  public positionClass: string = "sticky";
+  public pillarClass: string = "sticky top-0";
+
+  mounted() {
+    window.addEventListener("scroll", () => {
+      // @ts-ignore
+      if (document.scrollingElement.scrollTop > 3300) {
+        this.positionClass =
+          "absolute 2xl:bottom-72 xl:bottom-60 lg:bottom-64 bottom-96 w-full h-screen";
+        this.pillarClass =
+          "absolute 2xl:bottom-72 xl:bottom-60 lg:bottom-64 bottom-72 w-full h-full";
+      } else {
+        this.positionClass = "sticky top-0";
+        this.pillarClass = "sticky top-0";
+      }
+    });
+  }
 }
 </script>
 

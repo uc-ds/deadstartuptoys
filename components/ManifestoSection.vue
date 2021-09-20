@@ -1,5 +1,5 @@
 <template>
-  <section class="h-full manifesto-bg sm:pt-40 pt-52 lg:px-0 md:px-6 px-4 md:pb-28 pb-40">
+  <section class="min-h-screen manifesto-bg sm:pt-72 pt-96 lg:px-0 md:px-6 px-4 md:pb-28 pb-40 flex items-center">
     <div class="container mx-auto">
       <div class="flex flex-wrap">
         <div class="xl:w-full lg:w-3/4 mx-auto flex justify-center">

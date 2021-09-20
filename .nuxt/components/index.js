@@ -3,6 +3,7 @@ export { default as FooterSection } from '../../components/FooterSection.vue'
 export { default as ManifestoSection } from '../../components/ManifestoSection.vue'
 export { default as PageBanner } from '../../components/PageBanner.vue'
 export { default as ProductCard } from '../../components/ProductCard.vue'
+export { default as ProductPageDetails } from '../../components/ProductPageDetails.vue'
 export { default as ProductsSection } from '../../components/ProductsSection.vue'
 
 // nuxt/nuxt.js#8607

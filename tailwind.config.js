@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  purge: ["./src/pages/**/*.{js,ts,vue}", "./src/components/**/*.{js,ts,vue}"],
+  purge: ["./src/pages/*.{js,ts,vue}", "./src/components/*.{js,ts,vue}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

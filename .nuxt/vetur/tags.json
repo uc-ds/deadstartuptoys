@@ -14,6 +14,9 @@
   "ProductCard": {
     "description": "Auto imported from components/ProductCard.vue"
   },
+  "ProductPageDetails": {
+    "description": "Auto imported from components/ProductPageDetails.vue"
+  },
   "ProductsSection": {
     "description": "Auto imported from components/ProductsSection.vue"
   }
